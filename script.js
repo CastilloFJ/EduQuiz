@@ -5,8 +5,8 @@
 const jsonFiles = ["Revisión_General", "Python_Basico","Python_Intermedio","Python_Avanzado","Python_Experto",
 "CSS_Basico","CSS_Intermedio","CSS_Avanzado","CSS_Experto","HTML_Basico","HTML_Intermedio","HTML_Avanzado",
 "HTML_Experto","Bootstrap_Basico","Bootstrap_Intermedio","Bootstrap_Avanzado","Bootstrap_Experto","JavaScript_Basico",
-"JavaScript_Intermedio","JavaScript_Avanzado","JavaScript_Experto","PosgreSQL_Basico","PosgreSQL_Intermedio",
-"PosgreSQL_Avanzado","PosgreSQL_Experto","Django_Basico","Django_Intermedio","Django_Avanzado","Django_Experto"];
+"JavaScript_Intermedio","JavaScript_Avanzado","JavaScript_Experto","PostgreSQL_Basico","PostgreSQL_Intermedio",
+"PostgreSQL_Avanzado","PostgreSQL_Experto","Django_Basico","Django_Intermedio","Django_Avanzado","Django_Experto"];
 let currentQuestions = []; // Array que almacena la data del JSON
 let currentIndex = 0;      // En qué pregunta vamos
 let score = 0;             // Aciertos
