@@ -1,0 +1,47 @@
+[
+  {
+    "campo": "Programación",
+    "area": "Python",
+    "categoria": "Sintaxis",
+    "nivel": "Básico",
+    "tema": "Tipos de Datos",
+    "pregunta": "¿Qué imprimirá el siguiente código al ejecutar la función type()?",
+    "codigo": "elemento = 'Oxígeno'\nprint(type(elemento))",
+    "opcion1": "<class 'int'>",
+    "opcion2": "<class 'str'>",
+    "opcion3": "<class 'float'>",
+    "opcion4": "<class 'list'>",
+    "respuesta_correcta": 1,
+    "explicacion": "En Python, cualquier valor encerrado entre comillas (simples o dobles) se define como una cadena de caracteres o 'string' (str)."
+  },
+  {
+    "campo": "Química",
+    "area": "Química General",
+    "categoria": "Estructura Atómica",
+    "nivel": "Intermedio",
+    "tema": "Configuración Electrónica",
+    "pregunta": "Según el principio de exclusión de Pauli, ¿qué es correcto afirmar sobre dos electrones en un mismo átomo?",
+    "codigo": null,
+    "opcion1": "Pueden tener los cuatro números cuánticos iguales.",
+    "opcion2": "Deben tener espines opuestos si están en el mismo orbital.",
+    "opcion3": "Se atraen electrostáticamente.",
+    "opcion4":"Siempre ocupan el nivel de energía más externo.",
+    "respuesta_correcta": 1,
+    "explicacion": "El principio de exclusión de Pauli establece que no puede haber dos electrones con los mismos cuatro números cuánticos; por lo tanto, si comparten orbital, su espín (ms) debe ser diferente (+1/2 y -1/2)."
+  },
+  {
+    "campo": "Programación",
+    "area": "Python",
+    "categoria": "Estructuras de Datos",
+    "nivel": "Avanzado",
+    "tema": "Listas y Diccionarios",
+    "pregunta": "¿Cómo accederías al valor de la densidad en el siguiente diccionario?",
+    "codigo": "oro = {\n    'simbolo': 'Au',\n    'propiedades': {\n        'densidad': 19.3,\n        'punto_fusion': 1064\n    }\n}",
+    "opcion1":"oro['densidad']",
+    "opcion2":"oro['propiedades'][0]",
+    "opcion3":"oro['propiedades']['densidad']",
+    "opcion4":"oro.propiedades.densidad",
+    "respuesta_correcta": 2,
+    "explicacion": "Para acceder a diccionarios anidados, se encadenan los corchetes con sus respectivas llaves: diccionario['llave1']['llave2']."
+  }
+]

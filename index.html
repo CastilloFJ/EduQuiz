@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduQuiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<header id="top-bar" class="hidden">
+    <div class="top-bar-content">
+        <div class="left-tools">
+            <button id="menu-toggle" class="icon-btn" title="Menú de actividad">☰</button>
+            <div id="nav-menu" class="hidden">
+                <button id="reset-act-btn">🔄 Reiniciar actividad</button>
+                <button id="pause-act-btn">⏸️ Pausar</button>
+                <button id="exit-act-btn">🚪 Volver al menú principal</button>
+            </div>
+        </div>
+        
+        <div class="top-title">EduQuiz</div>
+        
+        <div class="right-tools">
+            <button id="focus-mode-btn" class="icon-btn" title="Modo Enfoque">🔳</button>
+        </div>
+    </div>
+</header>
+
+<div class="container" id="main-container">
+    
+    <div id="menu-screen">
+        <div class="menu-header">
+            <div class="title-area">
+                <h1>📖 EduQuiz</h1> 
+            </div>
+            <div class="header-actions">
+                <button id="sound-toggle" class="icon-btn" title="Activar/Desactivar Sonido">🔊</button>
+                <button id="theme-toggle" class="icon-btn" title="Cambiar Tema">🌓</button>
+            </div>
+        </div>
+
+        <div class="setup-grid">
+            <div class="config-item">
+                <label><i class="icon">📂</i> Fuente de Datos</label>
+                <select id="source-select"></select>
+            </div>
+
+            <div class="config-item">
+                <label><i class="icon">🎮</i> Selección de Modalidad</label>
+                <div class="mode-grid">
+                    <button class="mode-btn active" data-mode="study">Estudio</button>
+                    <button class="mode-btn" data-mode="quiz">Quiz</button>
+                    <button class="mode-btn" data-mode="game">Desafío</button>
+                </div>
+            </div>
+
+            <div class="config-item">
+                <label><i class="icon">🔢</i> Cantidad de Preguntas</label>
+                <input type="number" id="q-amount" value="10" min="1">
+            </div>
+        </div>
+
+        <div class="action-area">
+            <button id="start-btn" class="main-action-btn compact">Comenzar</button>
+        </div>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+        
+        <div class="quiz-tools">
+            <div id="timer">⏱️ 00:00</div>
+            <div class="center-group">
+                <div id="category-badge" class="category-badge">CATEGORÍA</div>
+                <div id="lives-display" class="v-hidden"></div>
+            </div>  
+            <div id="level-tag">Nivel I</div>
+        </div>
+        
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <p id="question-text" class="question-text">Cargando...</p>
+        
+        <pre id="code-block" class="hidden"><code class="language-python"></code></pre>
+        
+        <div id="options-grid" class="options-grid"></div>
+        
+        <p id="progress-text">Pregunta 1 de X</p>
+        
+        <div id="explanation-box" class="explanation-box hidden">
+            <p id="explanation-text"></p>
+            <button id="next-btn" class="main-action-btn">Continuar</button>
+        </div>
+    </div>
+
+    <div id="result-screen" class="hidden">
+        <h2 id="result-title">RESULTADOS</h2>
+        
+        <div class="result-visualization">
+            <div id="result-chart" class="chart">
+                <div id="chart-percentage" class="chart-inner">0%</div>
+            </div>
+        </div>
+        
+        <div class="stats-card">
+            <p>Puntaje: <span id="final-score">0</span></p>
+            <p>Tiempo: <span id="final-time">00:00</span></p>
+        </div>
+
+        <div id="mistakes-report" class="report-area"></div>
+
+        <button id="download-report-btn" class="main-action-btn compact hidden" style="background-color: #2c3e50; margin-bottom: 10px;">
+        📥 Descargar Reporte de Errores
+        </button>
+        <button onclick="location.reload()" class="main-action-btn">Reiniciar</button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
