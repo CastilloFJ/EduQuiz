@@ -63,7 +63,7 @@ Para ejecutarlo en tu PC, utiliza un servidor local:
 
 ## 🌐 Despliegue
 
-Este proyecto está optimizado para ser alojado en **GitHub Pages**. Solo necesitas subir los archivos y activar la opción en los ajustes del repositorio.
+Este proyecto está optimizado para ser alojado en **GitHub Pages**. Solo necesitas subir los archivos y activar la opción en los ajustes del repositorio. Aunque ya cuenta con contenido general para prueba y otras como HTML, CSS, JS, Python, Django, PostgreSQL y Bootstrap segmentados por niveles.
 
 ---
 © 2026 JCastillo - Desarrollador Full Stack & Profesor de Química.
