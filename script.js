@@ -2,9 +2,9 @@
    1. VARIABLES GLOBALES
    Memoria del juego, cronómetro y estado de configuración.
    ========================================================== */
-const jsonFiles = ["Revisión_General", "Python_Basico","Python_Intermedio","Python_Avanzado","Python_Experto",
-"CSS_Basico","CSS_Intermedio","CSS_Avanzado","CSS_Experto","HTML_Basico","HTML_Intermedio","HTML_Avanzado",
-"HTML_Experto","Bootstrap_Basico","Bootstrap_Intermedio","Bootstrap_Avanzado","Bootstrap_Experto","JavaScript_Basico",
+const jsonFiles = ["Revisión_General", "Quiz_Modulo_2", "Quiz_Modulo_3", "Quiz_Modulo_4", "Quiz_Modulo_5", "Quiz_Modulo_6", "Quiz_Modulo_7",
+"Python_Basico","Python_Intermedio","Python_Avanzado","Python_Experto", "CSS_Basico","CSS_Intermedio","CSS_Avanzado","CSS_Experto","HTML_Basico",
+"HTML_Intermedio","HTML_Avanzado", "HTML_Experto","Bootstrap_Basico","Bootstrap_Intermedio","Bootstrap_Avanzado","Bootstrap_Experto","JavaScript_Basico",
 "JavaScript_Intermedio","JavaScript_Avanzado","JavaScript_Experto","PostgreSQL_Basico","PostgreSQL_Intermedio",
 "PostgreSQL_Avanzado","PostgreSQL_Experto","Django_Basico","Django_Intermedio","Django_Avanzado","Django_Experto"];
 let currentQuestions = []; // Array que almacena la data del JSON
